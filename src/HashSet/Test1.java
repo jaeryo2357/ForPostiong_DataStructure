@@ -2,6 +2,7 @@ package HashSet;
 
 import java.util.HashSet;
 import java.util.Arrays;
+import java.util.Iterator;
 
 
 public class Test1 {
@@ -17,6 +18,11 @@ public class Test1 {
         System.out.println("First Output:"+Arrays.toString(hashSet.toArray()));
 
         hashSet.add("Test2");
-        System.out.println("Second Output:"+Arrays.toString(hashSet.toArray()));
+
+        System.out.println("Second Output:");
+
+        for (String s : hashSet) {
+            System.out.print(s);
+        }
     }
 }
